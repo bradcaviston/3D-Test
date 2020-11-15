@@ -29,7 +29,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Three.js 3D Menu Concept',
+      title: 'Three.js Animated Background Conecpt',
       template: 'src/index.html'
     })
   ],

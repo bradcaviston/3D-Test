@@ -1,19 +1,22 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><%= htmlWebpackPlugin.options.title %></title>
     <style>
       body {
         margin: 0;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        color: white;
+        color: rgb(255, 255, 255);
       }
       canvas {
         display: block;
       }
       .container {
         position: relative;
+        width: 100%;
+        height: 100%;
       }
       .overlay {
         position: absolute;
@@ -23,15 +26,23 @@
       }
       .title {
         text-align: center;
-        margin-top: 1.5rem;
+        margin: 0;
         font-size: 2.5rem;
+      }
+      .top {
+        padding: 1rem;
+        background-color: #0000002e;
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
       }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="overlay">
-        <h1 class="title">Three.js 3D Menu Concept</h1>
+        <div class="top">
+          <h1 class="title">Three.js Animated Background Conecpt</h1>
+        </div>
       </div>
       <canvas id="render-canvas"></canvas>
     </div>
